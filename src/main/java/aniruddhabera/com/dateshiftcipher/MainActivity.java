@@ -205,9 +205,5 @@ public class MainActivity extends FragmentActivity implements DatePickerDialog.O
         hideKeyboard(v);
     }
 
-    public void payLink(View v){
-        Uri uri = Uri.parse("https://www.instamojo.com/@oni96/");
-        Intent intent = new Intent(Intent.ACTION_VIEW,uri);
-        startActivity(intent);
-    }
+    
 }
