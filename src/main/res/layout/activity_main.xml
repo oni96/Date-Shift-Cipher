@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555"
+    tools:context="aniruddhabera.com.dateshiftcipher.MainActivity">
+
+
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Message"
+        android:maxLines="1"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#999" />
+
+    <Button
+        android:id="@+id/dateseletor"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/input"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="#666"
+        android:onClick="DateChooseButton"
+        android:text="Pick Date" />
+
+    <TextView
+        android:id="@+id/dateview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#999" />
+
+
+
+    <Button
+        android:id="@+id/buttonEncode"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#666"
+        android:onClick="encodeButton"
+        android:text="Encode" />
+
+    <EditText
+        android:id="@+id/outputText"
+        android:layout_marginTop="290dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Output"
+
+        android:inputType="none"
+        android:textColor="#999"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="450dp"
+        android:background="#666"
+        android:onClick="OnClear"
+        android:text="Clear All" />
+
+    <Button
+        android:id="@+id/copyButton"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="30dp"
+        android:background="#666"
+        android:onClick="OnCopy"
+        android:text="Copy" />
+
+    <Button
+        android:id="@+id/buttonDecode"
+        android:layout_below="@id/outputText"
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#666"
+        android:onClick="decodeButton"
+        android:text="Decode" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonDecode"
+        android:layout_marginTop="100dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6556204238409570/8855931640" />
+
+
+
+</RelativeLayout>
