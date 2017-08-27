@@ -107,7 +107,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-6556204238409570/8855931640" />
+        ads:adUnitId="************************************" />
 
 
 
